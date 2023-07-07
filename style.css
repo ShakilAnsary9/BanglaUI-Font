@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+body {
+  background-color: #212529 !important;
+}
+.font-tester {
+  height: 90px;
+  background-image: url(./images/font-tester-bg.svg);
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  border-radius: 15px;
+}
+.font-input {
+  width: 100%;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+.form-range::-moz-range-thumb {
+  background: linear-gradient(90deg, #c60b0d, #ff0f11) !important;
+}
+.font-box {
+  background-color: #343a40;
+  color: #ffffff;
+  position: relative;
+  height: 200px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 4px 4px 30px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: "Space Grotesk", "Hind Siliguri", sans-serif;
+}
+.font-box-content {
+  position: inherit;
+  z-index: 2;
+}
+.c-shape {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background-color: #212529;
+  opacity: 0.3;
+  top: -50px;
+  left: -50px;
+  z-index: 1;
+}
+.font-box-utility {
+  position: absolute;
+  bottom: 25px;
+}
+.font-down-btn {
+  background-color: #c52127;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 12px;
+}
+.font-down-btn {
+  text-decoration: none;
+}

@@ -1,0 +1,81 @@
+/* Anek Bangla @font-face */
+@font-face {
+  font-family: "Anek Bangla";
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Anek-Bangla/anek-bangla-100.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Anek Bangla";
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Anek-Bangla/anek-bangla-200.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Anek Bangla";
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Anek-Bangla/anek-bangla-300.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Anek Bangla";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Anek-Bangla/anek-bangla-400.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Anek Bangla";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Anek-Bangla/anek-bangla-500.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Anek Bangla";
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Anek-Bangla/anek-bangla-600.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Anek Bangla";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Anek-Bangla/anek-bangla-700.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Anek Bangla";
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Anek-Bangla/anek-bangla-800.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
