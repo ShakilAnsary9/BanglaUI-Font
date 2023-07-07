@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://shakil-lineuisvg.netlify.app/lineuisvg.css");
+
+/* Font CSS */
+@import "./FontCSS/anek-bangla.css";
 
 body {
   background-color: #212529 !important;
@@ -8,9 +12,11 @@ body {
   height: 90px;
   background-image: url(./images/font-tester-bg.svg);
   display: flex;
+  color: #ffffff;
   align-items: center;
   padding: 0 30px;
   border-radius: 15px;
+  font-family: "Space Grotesk", "Hind Siliguri", sans-serif;
 }
 .font-input {
   width: 100%;
@@ -25,9 +31,9 @@ body {
   background-color: #343a40;
   color: #ffffff;
   position: relative;
-  height: 200px;
   border-radius: 20px;
   padding: 20px;
+  margin-bottom: 20px;
   box-shadow: 4px 4px 30px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
   font-family: "Space Grotesk", "Hind Siliguri", sans-serif;
@@ -48,15 +54,83 @@ body {
   z-index: 1;
 }
 .font-box-utility {
-  position: absolute;
-  bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.font-box-utility button {
+  border: none;
+}
+#preview {
+  height: 60px;
+}
+.cdn-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cdn-section button {
+  background-color: transparent;
+  font-size: 26px;
+  border: none;
+}
+.lineui {
+  color: #4ad295;
+}
+.lineui:hover {
+  color: #ff0f11;
+}
+.card {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 10px 0 0 0 !important;
+}
+.link-cdn,
+.import-cdn {
+  background-color: #21252952;
+  padding: 15px;
+  border-radius: 10px;
+}
+.import-cdn {
+  margin: 15px 0 0 0;
+}
+.link-cdn input,
+.import-cdn input {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+.link-cdn i,
+.import-cdn i {
+  color: #ffffff;
+  font-size: 24px;
 }
 .font-down-btn {
   background-color: #c52127;
   color: #ffffff;
   padding: 8px 20px;
   border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.btn-title {
+  position: unset;
+  z-index: 2;
+}
+.b-shape {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ff0f11;
+  right: 0;
+  bottom: -28px;
+  z-index: 1;
 }
 .font-down-btn {
   text-decoration: none;
+}
+.anek-bangla {
+  font-family: "Anek Bangla";
 }
