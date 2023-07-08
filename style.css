@@ -75,6 +75,10 @@ body {
   align-items: center;
   width: 100%;
 }
+.alrt {
+  color: #4ad295;
+  font-size: 14px;
+}
 .cdn-section button {
   background-color: transparent;
   font-size: 26px;
@@ -100,11 +104,16 @@ body {
 .import-cdn {
   margin: 15px 0 0 0;
 }
+.link-cdn input:focus,
+.import-cdn input:focus {
+  outline: none;
+}
 .link-cdn input,
 .import-cdn input {
   background-color: transparent;
   border: none;
   color: #ffffff;
+  margin-right: 15px;
 }
 .link-cdn i,
 .import-cdn i {

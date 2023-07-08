@@ -75,6 +75,7 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
+                <div class="alrt d-none" id="alrt-1">Copied!</div>
                 <button
                   type="button"
                   data-bs-toggle="collapse"
@@ -88,24 +89,51 @@
               <div class="collapse" id="collapseExample1">
                 <div class="card card-body">
                   <div class="link-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/hind-siliguri.css'>"
+                      readonly
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-1')"
+                    ></i>
                   </div>
                   <div class="import-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/hind-siliguri.css');"
+                      readonly
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-1')"
+                    ></i>
                   </div>
                 </div>
               </div>
               <div class="font-box-utility">
-                <a class="font-down-btn" href="">
+                <a
+                  class="font-down-btn"
+                  href="./fonts/Hind-Siliguri/Hind_Siliguri.zip"
+                  download=""
+                >
                   Download Font
-                  <!-- <div class="btn-title">Download Font</div>
-                  <div class="b-shape"></div> -->
                 </a>
-                <a class="font-down-btn font-family-btn" href="">
+                <input
+                  class="d-none"
+                  type="text"
+                  value='font-family: "Hind Siliguri";'
+                  id="hind-siliguri"
+                />
+                <button
+                  class="font-down-btn font-family-btn"
+                  onclick="copyFontFamily('hind-siliguri'); showAlrt('alrt-1');"
+                >
                   Copy Font Family
-                </a>
+                </button>
               </div>
               <div class="c-shape"></div>
             </div>
@@ -122,6 +150,7 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
+                <div class="alrt d-none" id="alrt-2">Copied!</div>
                 <button
                   type="button"
                   data-bs-toggle="collapse"
@@ -135,24 +164,49 @@
               <div class="collapse" id="collapseExample4">
                 <div class="card card-body">
                   <div class="link-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/apona-lohit.css'>"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-2')"
+                    ></i>
                   </div>
                   <div class="import-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/apona-lohit.css');"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-2')"
+                    ></i>
                   </div>
                 </div>
               </div>
               <div class="font-box-utility">
-                <a class="font-down-btn" href="">
+                <a
+                  class="font-down-btn"
+                  href="./fonts/Apona-Lohit/Apona_Lohit.zip"
+                  download=""
+                >
                   Download Font
-                  <!-- <div class="btn-title">Download Font</div>
-                  <div class="b-shape"></div> -->
                 </a>
-                <a class="font-down-btn font-family-btn" href="">
+                <input
+                  class="d-none"
+                  type="text"
+                  value='font-family: "Apona Lohit";'
+                  id="apona-lohit"
+                />
+                <button
+                  class="font-down-btn font-family-btn"
+                  onclick="copyFontFamily('alinur-borno-bikash'); showAlrt('alrt-2');"
+                >
                   Copy Font Family
-                </a>
+                </button>
               </div>
               <div class="c-shape"></div>
             </div>
@@ -172,6 +226,7 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
+                <div class="alrt d-none" id="alrt-3">Copied!</div>
                 <button
                   type="button"
                   data-bs-toggle="collapse"
@@ -185,12 +240,26 @@
               <div class="collapse" id="collapseExample2">
                 <div class="card card-body">
                   <div class="link-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/anek-bangla.css'>"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-3')"
+                    ></i>
                   </div>
                   <div class="import-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/anek-bangla.css');"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-3')"
+                    ></i>
                   </div>
                 </div>
               </div>
@@ -201,7 +270,16 @@
                   download=""
                   >Download Font</a
                 >
-                <button class="font-down-btn font-family-btn">
+                <input
+                  class="d-none"
+                  type="text"
+                  value='font-family: "Anek Bangla";'
+                  id="anek-bangla"
+                />
+                <button
+                  class="font-down-btn font-family-btn"
+                  onclick="copyFontFamily('anek-bangla'); showAlrt('alrt-3');"
+                >
                   Copy Font Family
                 </button>
               </div>
@@ -220,6 +298,7 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
+                <div class="alrt d-none" id="alrt-4">Copied!</div>
                 <button
                   type="button"
                   data-bs-toggle="collapse"
@@ -233,23 +312,46 @@
               <div class="collapse" id="collapseExample5">
                 <div class="card card-body">
                   <div class="link-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-tatsama.css'>"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-4')"
+                    ></i>
                   </div>
                   <div class="import-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-tatsama.css');"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-4')"
+                    ></i>
                   </div>
                 </div>
               </div>
               <div class="font-box-utility">
                 <a
                   class="font-down-btn"
-                  href="./fonts/Anek-Bangla/Anek_Bangla.zip"
+                  href="./fonts/Alinur-Tatsama/Alinur_Tatsama.zip"
                   download=""
                   >Download Font</a
                 >
-                <button class="font-down-btn font-family-btn">
+                <input
+                  class="d-none"
+                  type="text"
+                  value='font-family: "Alinur Tatsama";'
+                  id="alinur-tatsama"
+                />
+                <button
+                  class="font-down-btn font-family-btn"
+                  onclick="copyFontFamily('alinur-tatsama'); showAlrt('alrt-4');"
+                >
                   Copy Font Family
                 </button>
               </div>
@@ -271,6 +373,7 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
+                <div class="alrt d-none" id="alrt-5">Copied!</div>
                 <button
                   type="button"
                   data-bs-toggle="collapse"
@@ -284,24 +387,49 @@
               <div class="collapse" id="collapseExample3">
                 <div class="card card-body">
                   <div class="link-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/tiro-bangla.css'>"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-5')"
+                    ></i>
                   </div>
                   <div class="import-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/tiro-bangla.css');"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-5')"
+                    ></i>
                   </div>
                 </div>
               </div>
               <div class="font-box-utility">
-                <a class="font-down-btn" href="">
+                <a
+                  class="font-down-btn"
+                  href="./fonts/Tiro-Bangla/Tiro_Bangla.zip"
+                  download=""
+                >
                   Download Font
-                  <!-- <div class="btn-title">Download Font</div>
-                  <div class="b-shape"></div> -->
                 </a>
-                <a class="font-down-btn font-family-btn" href="">
+                <input
+                  class="d-none"
+                  type="text"
+                  value='font-family: "Tiro Bangla";'
+                  id="tiro-bangla"
+                />
+                <button
+                  class="font-down-btn font-family-btn"
+                  onclick="copyFontFamily('tiro-bangla'); showAlrt('alrt-5');"
+                >
                   Copy Font Family
-                </a>
+                </button>
               </div>
               <div class="c-shape"></div>
             </div>
@@ -318,6 +446,7 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
+                <div class="alrt d-none" id="alrt-6">Copied!</div>
                 <button
                   type="button"
                   data-bs-toggle="collapse"
@@ -331,24 +460,49 @@
               <div class="collapse" id="collapseExample6">
                 <div class="card card-body">
                   <div class="link-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-borno-bikash.css'>"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-6');"
+                    ></i>
                   </div>
                   <div class="import-cdn d-flex align-items-center">
-                    <input class="w-100" type="text" value="hsi" />
-                    <i class="lineui lineui-clipboard-text"></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-borno-bikash.css');"
+                    />
+                    <i
+                      class="lineui lineui-clipboard-text copy-icon"
+                      onclick="showAlrt('alrt-6');"
+                    ></i>
                   </div>
                 </div>
               </div>
               <div class="font-box-utility">
-                <a class="font-down-btn" href="">
+                <a
+                  class="font-down-btn"
+                  href="./fonts/Alinur-Borno-Bikash/Alinur_Borno_Bikash.zip"
+                  download=""
+                >
                   Download Font
-                  <!-- <div class="btn-title">Download Font</div>
-                  <div class="b-shape"></div> -->
                 </a>
-                <a class="font-down-btn font-family-btn" href="">
+                <input
+                  class="d-none"
+                  type="text"
+                  value='font-family: "Alinur Borno Bikash";'
+                  id="alinur-borno-bikash"
+                />
+                <button
+                  class="font-down-btn font-family-btn"
+                  onclick="copyFontFamily('alinur-borno-bikash'); showAlrt('alrt-6');"
+                >
                   Copy Font Family
-                </a>
+                </button>
               </div>
               <div class="c-shape"></div>
             </div>
