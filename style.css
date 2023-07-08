@@ -4,6 +4,10 @@
 
 /* Font CSS */
 @import "./FontCSS/anek-bangla.css";
+@import "./FontCSS/tiro-banga.css";
+@import "./FontCSS/apona-lohit.css";
+@import "./FontCSS/alinur-tatsama.css";
+@import "./FontCSS/alinur-borno-bikash.css";
 
 body {
   background-color: #212529 !important;
@@ -131,6 +135,19 @@ body {
 .font-down-btn {
   text-decoration: none;
 }
+/* All Font Family */
 .anek-bangla {
   font-family: "Anek Bangla";
+}
+.tiro-bangla {
+  font-family: "Tiro Bangla";
+}
+.apona-lohit {
+  font-family: "Apona Lohit";
+}
+.alinur-tatsama {
+  font-family: "Alinur Tatsama";
+}
+.alinur-borno-bikash {
+  font-family: "Alinur Borno Bikash";
 }
