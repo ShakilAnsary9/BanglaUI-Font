@@ -1,0 +1,19 @@
+/* Alinur Tatsama Font Face */
+@font-face {
+  font-family: "Alinur Tatsama";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url(../fonts/Alinur-Tatsama/alinur-tatsama.woff) format("woff");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Alinur Tatsama";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url(../fonts/Alinur-Tatsama/alinur-tatsama-italic.woff) format("woff");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}

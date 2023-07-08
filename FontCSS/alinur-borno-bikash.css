@@ -1,0 +1,20 @@
+/* Alinur Borno Bikash Font Face */
+@font-face {
+  font-family: "Alinur Borno Bikash";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url(../fonts/Alinur-Borno-Bikash/alinur-borno-bikash.woff) format("woff");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Alinur Borno Bikash";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url(../fonts/Alinur-Borno-Bikash/alinur-borno-bikash-italic.woff)
+    format("woff");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}

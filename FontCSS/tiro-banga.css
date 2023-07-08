@@ -1,0 +1,19 @@
+/* Tiro Bangla Font Face */
+@font-face {
+  font-family: "Tiro Bangla";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Tiro-Bangla/tiro-bangla-400.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
+@font-face {
+  font-family: "Tiro Bangla";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Tiro-Bangla/tiro-bangla-400-italics.woff2) format("woff2");
+  unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9,
+    U+25CC;
+}
