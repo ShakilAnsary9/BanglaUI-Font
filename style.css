@@ -1,6 +1,10 @@
+/* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://shakil-lineuisvg.netlify.app/lineuisvg.css");
+
+/* FlatIcon */
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
 
 /* Font CSS */
 @import "./FontCSS/anek-bangla.css";
@@ -12,6 +16,49 @@
 
 body {
   background-color: #212529 !important;
+}
+.logo {
+  width: 200px;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 100%;
+  color: #ffffff;
+  font-family: "Space Grotesk", "Hind Siliguri", sans-serif;
+}
+.avtar {
+  height: 50px;
+  width: 50px;
+}
+.avtar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #c60b0d;
+}
+.report {
+  display: flex;
+  align-items: center;
+  background-color: #343a4094;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+.report i {
+  color: #ffc000;
+  margin-right: 10px;
+}
+.report-text a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .font-tester {
   height: 90px;
