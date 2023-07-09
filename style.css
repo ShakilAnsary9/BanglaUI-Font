@@ -45,12 +45,14 @@ body {
   border: 2px solid #c60b0d;
 }
 .report {
-  display: flex;
-  align-items: center;
   background-color: #343a4094;
   padding: 10px 15px;
   border-radius: 8px;
   margin: 0 10px;
+}
+.report a {
+  display: flex;
+  align-items: center;
 }
 .report i {
   color: #ffc000;
