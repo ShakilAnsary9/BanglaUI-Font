@@ -1,0 +1,7 @@
+/* Lipishree Font Face */
+@font-face {
+  font-family: "Lipishree";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lipishree/lipishree.woff) format("woff");
+}
