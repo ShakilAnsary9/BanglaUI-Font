@@ -15,6 +15,7 @@
 @import "./FontCSS/hind-siliguri.css";
 @import "./FontCSS/alinur-subas.css";
 @import "./FontCSS/lipishree.css";
+@import "./FontCSS/charukola.css";
 
 body {
   background-color: #212529 !important;
@@ -217,4 +218,7 @@ body {
 }
 .lipishree {
   font-family: "Lipishree";
+}
+.charukola {
+  font-family: "Charukola";
 }

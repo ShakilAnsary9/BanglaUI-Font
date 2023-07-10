@@ -1,0 +1,44 @@
+/* Charukola Font Face */
+@font-face {
+  font-family: "Charukola";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Charukola/charukola-ultra-light-300.woff) format("woff");
+}
+@font-face {
+  font-family: "Charukola";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/Charukola/charukola-ultra-light-300-italic.woff)
+    format("woff");
+}
+@font-face {
+  font-family: "Charukola";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/Charukola/charukola-regular-400.woff) format("woff");
+}
+@font-face {
+  font-family: "Charukola";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../fonts/Charukola/charukola-regular-italic-400.woff) format("woff");
+}
+@font-face {
+  font-family: "Charukola";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Charukola/charukola-bold-500.woff) format("woff");
+}
+@font-face {
+  font-family: "Charukola";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Charukola/charukola-bold-500-italic.woff) format("woff");
+}
