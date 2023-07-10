@@ -1,0 +1,13 @@
+/* alinur-subas-fontface */
+@font-face {
+  font-family: "Alinur Subas";
+  src: url(../fonts/Alinur-Subas/alinur-subas-.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Alinur Subas";
+  src: url(../fonts/Alinur-Subas/alinur-subas-italic.woff);
+  font-style: italic;
+  font-weight: normal;
+}
