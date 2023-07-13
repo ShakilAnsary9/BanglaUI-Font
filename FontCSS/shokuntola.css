@@ -1,0 +1,8 @@
+/* Shokuntola Font Face */
+@font-face {
+  font-family: "Shokuntola";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Shokuntola/shokuntola.woff) format("woff");
+}

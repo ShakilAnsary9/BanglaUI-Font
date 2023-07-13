@@ -16,6 +16,7 @@
 @import "./FontCSS/alinur-subas.css";
 @import "./FontCSS/lipishree.css";
 @import "./FontCSS/charukola.css";
+@import "./FontCSS/shokuntola.css";
 
 body {
   background-color: #212529 !important;
@@ -221,4 +222,7 @@ body {
 }
 .charukola {
   font-family: "Charukola";
+}
+.shokuntola {
+  font-family: "Shokuntola";
 }
