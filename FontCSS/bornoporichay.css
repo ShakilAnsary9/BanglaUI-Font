@@ -1,0 +1,8 @@
+/* Bornoporichay Font Face */
+@font-face {
+  font-family: "Bornoporichay";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Bornoporichay/bornoporichay.woff) format("woff");
+}

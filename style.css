@@ -17,6 +17,7 @@
 @import "./FontCSS/lipishree.css";
 @import "./FontCSS/charukola.css";
 @import "./FontCSS/shokuntola.css";
+@import "./FontCSS/bornoporichay.css";
 
 body {
   background-color: #212529 !important;
@@ -225,4 +226,7 @@ body {
 }
 .shokuntola {
   font-family: "Shokuntola";
+}
+.bornoporichay {
+  font-family: "Bornoporichay";
 }
