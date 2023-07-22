@@ -1,0 +1,8 @@
+/* Bokul Font Face */
+@font-face {
+  font-family: "Bokul";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Bokul/bokul.woff) format("woff");
+}

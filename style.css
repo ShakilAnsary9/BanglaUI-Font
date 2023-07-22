@@ -18,6 +18,7 @@
 @import "./FontCSS/charukola.css";
 @import "./FontCSS/shokuntola.css";
 @import "./FontCSS/bornoporichay.css";
+@import "./FontCSS/bokul.css";
 
 body {
   background-color: #212529 !important;
@@ -229,4 +230,7 @@ body {
 }
 .bornoporichay {
   font-family: "Bornoporichay";
+}
+.bokul {
+  font-family: "Bokul";
 }
