@@ -1,0 +1,15 @@
+/* Monument Font Face */
+@font-face {
+  font-family: "Monument";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Monument/Monument-400.woff) format("woff");
+}
+@font-face {
+  font-family: "Monument";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/Monument/Monument-800.woff) format("woff");
+}
