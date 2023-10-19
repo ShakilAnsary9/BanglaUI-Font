@@ -19,6 +19,7 @@
 @import "./FontCSS/shokuntola.css";
 @import "./FontCSS/bornoporichay.css";
 @import "./FontCSS/bokul.css";
+@import "./FontCSS/monument.css";
 
 body {
   background-color: #212529 !important;
@@ -233,4 +234,7 @@ body {
 }
 .bokul {
   font-family: "Bokul";
+}
+.monument {
+  font-family: "Monument";
 }
