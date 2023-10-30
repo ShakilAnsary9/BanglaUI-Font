@@ -1,0 +1,29 @@
+/* SutonnyMJ Font Face */
+@font-face {
+  font-family: "Sutonny MJ";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/SutonnyMJ/SutonnyMJ-400.woff) format("woff");
+}
+@font-face {
+  font-family: "Sutonny MJ";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/SutonnyMJ/SutonnyMJ-800.woff) format("woff");
+}
+@font-face {
+  font-family: "Sutonny MJ";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/SutonnyMJ/SutonnyMJ-Italic-400.woff) format("woff");
+}
+@font-face {
+  font-family: "Sutonny MJ";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/SutonnyMJ/SutonnyMJ-Italic-800.woff) format("woff");
+}
