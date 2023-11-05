@@ -1,0 +1,29 @@
+/* Shurjo Font Face */
+@font-face {
+  font-family: "Shurjo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Shurjo/Shurjo400.woff) format("woff");
+}
+@font-face {
+  font-family: "Shurjo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Shurjo/Shurjo400.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Shurjo";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Shurjo/Shurjo700.woff) format("woff");
+}
+@font-face {
+  font-family: "Shurjo";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Shurjo/Shurjo700.woff2) format("woff2");
+}
