@@ -1,0 +1,15 @@
+/* Srabondhara Font Face */
+@font-face {
+  font-family: "Srabondhara";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Srabondhara/Srabondhara.woff) format("woff");
+}
+@font-face {
+  font-family: "Srabondhara";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Srabondhara/Srabondhara-Italic.woff) format("woff");
+}

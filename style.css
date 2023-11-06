@@ -21,6 +21,7 @@
 @import "./FontCSS/bokul.css";
 @import "./FontCSS/sutonnymj.css";
 @import "./FontCSS/shurjo.css";
+@import "./FontCSS/srabondhara.css";
 
 body {
   background-color: #212529 !important;
@@ -241,4 +242,7 @@ body {
 }
 .shurjo {
   font-family: "Shurjo";
+}
+.srabondhara {
+  font-family: "Srabondhara";
 }
