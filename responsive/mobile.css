@@ -7,8 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .report-text {
+  .report-link {
     display: none;
+  }
+  .view-count {
+    margin-top: -1px;
+    margin-left: 5px;
   }
   .report i {
     margin-right: 0;

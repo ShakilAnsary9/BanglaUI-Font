@@ -25,7 +25,7 @@ const viewCountRef = ref(db, "pageViews");
 // Display the initial value on page load
 onValue(viewCountRef, (snapshot) => {
   const viewCount = snapshot.val() || 0;
-  document.getElementById("viewCount").innerText = viewCount;
+  updateViewCount(viewCount);
 });
 
 // Check if the page has been loaded before
@@ -40,7 +40,7 @@ if (hasLoadedBefore) {
       const currentCount = snapshot.val() || 0;
       const updatedCount = currentCount + 1;
       set(ref(db, "pageViews"), updatedCount);
-      document.getElementById("viewCount").innerText = updatedCount;
+      updateViewCount(updatedCount);
     },
     { onlyOnce: true }
   );
@@ -48,3 +48,17 @@ if (hasLoadedBefore) {
 
 // Mark the page as loaded in sessionStorage
 sessionStorage.setItem("hasLoadedBefore", "true");
+
+// Function to update the view count with "k" suffix and optional decimal places
+function updateViewCount(count) {
+  const viewCountElement = document.getElementById("viewCount");
+  if (count >= 1000) {
+    const countInK =
+      count % 1000 === 0
+        ? (count / 1000).toFixed(0)
+        : (count / 1000).toFixed(2).replace(/\.?0+$/, "");
+    viewCountElement.innerText = countInK + "k";
+  } else {
+    viewCountElement.innerText = count;
+  }
+}
