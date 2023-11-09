@@ -58,6 +58,9 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   margin: 0 10px;
+  display: flex;
+  align-items: center;
+  height: 40px;
 }
 .report a {
   display: flex;
@@ -66,6 +69,12 @@ body {
 .report i {
   color: #ffc000;
   margin-right: 10px;
+}
+.view-report i {
+  color: #fefefe;
+}
+.view-count {
+  margin-top: -2px;
 }
 .info-box a {
   text-decoration: none;
