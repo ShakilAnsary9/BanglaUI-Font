@@ -22,6 +22,7 @@
 @import "./FontCSS/sutonnymj.css";
 @import "./FontCSS/shurjo.css";
 @import "./FontCSS/srabondhara.css";
+@import "./FontCSS/bonbonia-kajla.css";
 
 body {
   background-color: #212529 !important;
@@ -265,4 +266,7 @@ body {
 }
 .srabondhara {
   font-family: "Srabondhara";
+}
+.bonbonia-kajla {
+  font-family: "Bonbonia Kajla";
 }

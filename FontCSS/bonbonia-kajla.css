@@ -1,0 +1,15 @@
+/* Bonbonia Kajla Font Face */
+@font-face {
+  font-family: "Bonbonia Kajla";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Bonbonia-Kajla/bonbonia-kajla.woff) format("woff");
+}
+@font-face {
+  font-family: "Bonbonia Kajla";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Bonbonia-Kajla/bonbonia-kajla-italic.woff) format("woff");
+}
