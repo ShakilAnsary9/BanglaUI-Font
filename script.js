@@ -59,6 +59,18 @@ function copyFontFamily(inputId) {
   tempInput.select();
   document.execCommand("copy");
   document.body.removeChild(tempInput);
+  
+  // Show toast notification
+  if (typeof showCdnToast === 'function') {
+    showCdnToast();
+  } else {
+    // Fallback for original alert
+    const alrtText = document.getElementById("alrt-1");
+    if (alrtText) {
+      alrtText.classList.remove("d-none");
+      setTimeout(() => alrtText.classList.add("d-none"), 2000);
+    }
+  }
 }
 
 function showAlrt(alrtID) {

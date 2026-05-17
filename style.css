@@ -310,3 +310,262 @@ body {
 .bonbonia-kajla {
   font-family: "Bonbonia Kajla";
 }
+
+.cdn-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdn-modal-overlay.active {
+  display: flex;
+}
+
+.cdn-modal {
+  background: #343a40;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  font-family: "Space Grotesk", "Hind Siliguri", sans-serif;
+}
+
+.cdn-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cdn-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cdn-modal-close {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.cdn-modal-close:hover {
+  color: #fff;
+}
+
+.cdn-modal-body {
+  padding: 24px;
+}
+
+.cdn-field {
+  margin-bottom: 20px;
+}
+
+.cdn-field:last-child {
+  margin-bottom: 0;
+}
+
+.cdn-field label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.cdn-copy-row {
+  display: flex;
+  background: #212529;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cdn-copy-row input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 12px 14px;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.cdn-copy-row input:focus {
+  outline: none;
+}
+
+.cdn-copy-row button {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.cdn-copy-row button:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cdn-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4ad295;
+  color: #212529;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: "Space Grotesk", "Hind Siliguri", sans-serif;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cdn-toast.show {
+  opacity: 1;
+}
+
+.cdn-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdn-modal-overlay.active {
+  display: flex;
+}
+
+.cdn-modal {
+  background: #343a40;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.cdn-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cdn-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cdn-modal-close {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.cdn-modal-close:hover {
+  color: #fff;
+}
+
+.cdn-modal-body {
+  padding: 24px;
+}
+
+.cdn-field {
+  margin-bottom: 20px;
+}
+
+.cdn-field:last-child {
+  margin-bottom: 0;
+}
+
+.cdn-field label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.cdn-copy-row {
+  display: flex;
+  background: #212529;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cdn-copy-row input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 12px 14px;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.cdn-copy-row input:focus {
+  outline: none;
+}
+
+.cdn-copy-row button {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.cdn-copy-row button:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cdn-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4ad295;
+  color: #212529;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: "Space Grotesk", "Hind Siliguri", sans-serif;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cdn-toast.show {
+  opacity: 1;
+}

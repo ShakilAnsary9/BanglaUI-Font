@@ -17,6 +17,33 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
   </head>
   <body>
+    <!-- CDN Modal -->
+    <div class="cdn-modal-overlay" id="cdnModal">
+      <div class="cdn-modal">
+        <div class="cdn-modal-header">
+          <h3>Get CDN Link</h3>
+          <button class="cdn-modal-close" onclick="closeCdnModal()">&times;</button>
+        </div>
+        <div class="cdn-modal-body">
+          <div class="cdn-field">
+            <label>HTML Link Tag</label>
+            <div class="cdn-copy-row">
+              <input type="text" id="cdnLink" readonly />
+              <button onclick="copyCdnLink()"><i class="lineui lineui-clipboard-text"></i></button>
+            </div>
+          </div>
+          <div class="cdn-field">
+            <label>CSS @import</label>
+            <div class="cdn-copy-row">
+              <input type="text" id="cdnImport" readonly />
+              <button onclick="copyCdnImport()"><i class="lineui lineui-clipboard-text"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cdn-toast" id="cdnToast">Copied to clipboard!</div>
+
     <div class="container mt-5">
       <div class="col-12 mb-5">
         <div class="row">
@@ -156,44 +183,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-1">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample1"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('hind-siliguri.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample1">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/hind-siliguri.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-1')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/hind-siliguri.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-1')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -282,44 +274,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-4">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample4"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('bonbonia-kajla.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample4">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/bonbonia-kajla.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-4')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/bonbonia-kajla.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-4')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -408,44 +365,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-7">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample7"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('alinur-subas.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample7">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-subas.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-7')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-subas.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-7')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -534,44 +456,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-10">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample10"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('shokuntola.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample10">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/shokuntola.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-10')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/shokuntola.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-10')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -636,7 +523,7 @@
                   class="d-none"
                   type="text"
                   value='font-family: "Shokuntola";'
-                  id="alinur-subas"
+                  id="shokuntola"
                 />
                 <button
                   class="font-down-btn font-family-btn"
@@ -660,44 +547,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-13">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample13"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('sutonnymj.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample13">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/sutonnymj.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-13')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/sutonnymj.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-13')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -786,44 +638,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-16">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample16"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('apona-lohit.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample16">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/apona-lohit.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-16')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/apona-lohit.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-16')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -915,44 +732,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-2">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample2"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('anek-bangla.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample2">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/anek-bangla.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-2')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/anek-bangla.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-2')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -1040,44 +822,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-5">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample5"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('alinur-tatsama.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample5">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-tatsama.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-5')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-tatsama.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-5')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -1165,44 +912,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-8">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample8"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('lipishree.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample8">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/lipishree.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-8')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/lipishree.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-8')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -1289,44 +1001,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-11">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample11"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('bornoporichay.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample11">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/bornoporichay.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-11')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS//bornoporichay.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-11')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -1412,44 +1089,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-14">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample14"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('shurjo.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample14">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/shurjo.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-14')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/shurjo.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-14')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -1540,44 +1182,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-3">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample3"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('tiro-banga.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample3">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/tiro-bangla.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-3')"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/tiro-bangla.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-3')"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -1666,44 +1273,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-6">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample6"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('alinur-borno-bikash.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample6">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-borno-bikash.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-6');"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/alinur-borno-bikash.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-6');"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -1792,44 +1364,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-9">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample9"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('charukola.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample9">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/charukola.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-9');"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/charukola.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-9');"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -1916,44 +1453,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-12">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample12"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('bokul.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample12">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/bokul.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-12');"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/bokul.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-12');"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -2042,44 +1544,9 @@
               </div>
               <div class="cdn-section">
                 <div>CDN</div>
-                <div class="alrt d-none" id="alrt-15">Copied!</div>
-                <button
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample15"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                <button type="button" onclick="openCdnModal('srabondhara.css')">
                   <i class="lineui lineui-clipboard"></i>
                 </button>
-              </div>
-              <div class="collapse" id="collapseExample15">
-                <div class="card card-body">
-                  <div class="link-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/srabondhara.css'>"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-15');"
-                    ></i>
-                  </div>
-                  <div class="import-cdn d-flex align-items-center">
-                    <input
-                      class="w-100"
-                      type="text"
-                      value="@import url('https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS/srabondhara.css');"
-                      readonly
-                    />
-                    <i
-                      class="lineui lineui-clipboard-text copy-icon"
-                      onclick="showAlrt('alrt-15');"
-                    ></i>
-                  </div>
-                </div>
               </div>
               <div class="font-box-utility">
                 <a
@@ -2161,6 +1628,31 @@
     </div>
     <!-- Main JS -->
     <script src="./script.js"></script>
+    <script>
+      function openCdnModal(cssFile) {
+        const base = 'https://cdn.jsdelivr.net/gh/ShakilAnsary9/BanglaUI-Font@latest/FontCSS';
+        document.getElementById("cdnLink").value = "<link rel='stylesheet' href='" + base + '/' + cssFile + "'>";
+        document.getElementById("cdnImport").value = "@import url('" + base + '/' + cssFile + "');";
+        document.getElementById("cdnModal").classList.add("active");
+      }
+      function closeCdnModal() {
+        document.getElementById("cdnModal").classList.remove("active");
+      }
+      function copyCdnLink() {
+        navigator.clipboard.writeText(document.getElementById("cdnLink").value);
+        showCdnToast();
+      }
+      function copyCdnImport() {
+        navigator.clipboard.writeText(document.getElementById("cdnImport").value);
+        showCdnToast();
+      }
+      function showCdnToast() {
+        document.getElementById("cdnToast").classList.add("show");
+        setTimeout(() => document.getElementById("cdnToast").classList.remove("show"), 2000);
+      }
+      document.getElementById("cdnModal").addEventListener("click", e => { if(e.target.id === "cdnModal") closeCdnModal(); });
+      document.addEventListener("keydown", e => { if(e.key === "Escape") closeCdnModal(); });
+    </script>
     <script type="module" src="./counter.js"></script>
     <!-- Bootstrap JS -->
     <script
