@@ -1,0 +1,1749 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation — BanglaUI Fonts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --bg0: #0a0b0f;
+        --bg1: #111318;
+        --bg2: #181c24;
+        --bg3: #1f2330;
+        --border: rgba(255, 255, 255, 0.07);
+        --border-hi: rgba(255, 255, 255, 0.14);
+        --accent: #7c6af7;
+        --accent2: #f06a6a;
+        --accent3: #4ecdc4;
+        --text1: #f0eef8;
+        --text2: #9b98b4;
+        --text3: #5a5870;
+        --mono: "DM Mono", monospace;
+        --sans: "Outfit", sans-serif;
+        --serif: "Fraunces", serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--bg0);
+        color: var(--text1);
+        font-family: var(--sans);
+        font-size: 15px;
+        line-height: 1.7;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* ── Background art ── */
+      .bg-art {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+      .bg-glyph {
+        position: absolute;
+        font-family: "Noto Sans Bengali", "Hind Siliguri", serif;
+        font-size: 28vw;
+        font-weight: 700;
+        opacity: 0.028;
+        color: var(--accent);
+        user-select: none;
+        line-height: 1;
+        animation: float 20s ease-in-out infinite;
+      }
+      .bg-glyph:nth-child(1) {
+        top: -8%;
+        right: -10%;
+        animation-delay: 0s;
+      }
+      .bg-glyph:nth-child(2) {
+        bottom: -15%;
+        left: -8%;
+        font-size: 18vw;
+        opacity: 0.018;
+        animation-delay: -8s;
+        color: var(--accent2);
+      }
+      .bg-glyph:nth-child(3) {
+        top: 40%;
+        left: 30%;
+        font-size: 8vw;
+        opacity: 0.012;
+        animation-delay: -14s;
+        color: var(--accent3);
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) rotate(-2deg);
+        }
+        50% {
+          transform: translateY(-30px) rotate(2deg);
+        }
+      }
+
+      .grid-lines {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(124, 106, 247, 0.025) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(124, 106, 247, 0.025) 1px,
+            transparent 1px
+          );
+        background-size: 60px 60px;
+      }
+      .glow-orb {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(120px);
+      }
+      .glow-orb:nth-child(4) {
+        width: 600px;
+        height: 600px;
+        background: rgba(124, 106, 247, 0.07);
+        top: -100px;
+        right: -100px;
+      }
+      .glow-orb:nth-child(5) {
+        width: 400px;
+        height: 400px;
+        background: rgba(240, 106, 106, 0.05);
+        bottom: 20%;
+        left: -50px;
+      }
+
+      /* ── Layout ── */
+      .wrap {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ── Header ── */
+      header {
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(20px);
+        background: rgba(10, 11, 15, 0.7);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 0 40px;
+      }
+      .header-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+      .logo-icon {
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, var(--accent), var(--accent2));
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--serif);
+        font-size: 18px;
+        color: #fff;
+        flex-shrink: 0;
+      }
+      .logo-text {
+        font-family: var(--serif);
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text1);
+        letter-spacing: -0.3px;
+      }
+      .back-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--text2);
+        text-decoration: none;
+        font-size: 13px;
+        padding: 7px 14px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        transition: all 0.2s;
+        background: var(--bg2);
+      }
+      .back-btn:hover {
+        color: var(--text1);
+        border-color: var(--border-hi);
+        background: var(--bg3);
+      }
+      .back-btn svg {
+        opacity: 0.6;
+      }
+
+      /* ── Hero strip ── */
+      .hero-strip {
+        padding: 56px 40px 0;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .hero-eyebrow {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 16px;
+      }
+      .hero-title {
+        font-family: var(--serif);
+        font-size: clamp(32px, 5vw, 54px);
+        font-weight: 300;
+        line-height: 1.1;
+        color: var(--text1);
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+      }
+      .hero-title em {
+        font-style: italic;
+        background: linear-gradient(135deg, var(--accent), var(--accent2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .hero-desc {
+        color: var(--text2);
+        font-size: 16px;
+        max-width: 520px;
+        line-height: 1.65;
+      }
+
+      /* ── Tab nav ── */
+      .tab-nav-wrap {
+        padding: 36px 40px 0;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .tab-nav {
+        display: flex;
+        gap: 2px;
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 5px;
+        width: fit-content;
+      }
+      .tab-btn {
+        background: transparent;
+        border: none;
+        color: var(--text3);
+        padding: 9px 22px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: var(--sans);
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        transition: all 0.2s;
+        position: relative;
+      }
+      .tab-btn:hover {
+        color: var(--text2);
+      }
+      .tab-btn.active {
+        background: var(--bg3);
+        color: var(--text1);
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+      }
+      .tab-btn.active::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 2px;
+        background: linear-gradient(90deg, var(--accent), var(--accent2));
+        border-radius: 2px;
+      }
+
+      /* ── Content area ── */
+      .content-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 36px 40px 80px;
+      }
+      .tab-panel {
+        display: none;
+      }
+      .tab-panel.active {
+        display: block;
+        animation: fadeUp 0.35s ease both;
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ── Section headings ── */
+      .section-label {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--text3);
+        margin-bottom: 8px;
+      }
+      .section-title {
+        font-family: var(--serif);
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--text1);
+        letter-spacing: -0.5px;
+        margin-bottom: 10px;
+      }
+      .section-desc {
+        color: var(--text2);
+        font-size: 14.5px;
+        max-width: 560px;
+        margin-bottom: 32px;
+      }
+
+      /* ── Cards ── */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 720px) {
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card {
+        background: var(--bg1);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 24px;
+        transition: border-color 0.2s;
+      }
+      .card:hover {
+        border-color: var(--border-hi);
+      }
+      .card-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text2);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .card-title-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      /* ── Install box ── */
+      .install-hero {
+        position: relative;
+        border-radius: 20px;
+        margin-bottom: 24px;
+        overflow: hidden;
+        background: var(--bg1);
+        border: 1px solid var(--border-hi);
+      }
+
+      /* Animated shimmer border */
+      .install-hero::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        border-radius: 21px;
+        background: conic-gradient(
+          from var(--angle, 0deg),
+          transparent 0deg,
+          rgba(124, 106, 247, 0.6) 60deg,
+          rgba(240, 106, 106, 0.4) 120deg,
+          rgba(78, 205, 196, 0.3) 180deg,
+          transparent 240deg
+        );
+        z-index: 0;
+        animation: spin 4s linear infinite;
+      }
+      .install-hero::after {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        border-radius: 19px;
+        background: var(--bg1);
+        z-index: 1;
+      }
+      @keyframes spin {
+        to {
+          --angle: 360deg;
+        }
+      }
+      @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+      }
+
+      .install-inner {
+        position: relative;
+        z-index: 2;
+        padding: 0;
+      }
+
+      /* Top bar — package manager tabs */
+      .pm-tabs {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        border-bottom: 1px solid var(--border);
+        padding: 0 20px;
+      }
+      .pm-tab {
+        background: transparent;
+        border: none;
+        color: var(--text3);
+        font-family: var(--mono);
+        font-size: 12px;
+        font-weight: 500;
+        padding: 11px 18px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -1px;
+        transition: all 0.18s;
+        letter-spacing: 0.5px;
+      }
+      .pm-tab:hover {
+        color: var(--text2);
+      }
+      .pm-tab.active {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
+      .pm-tab-dots {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-right: auto;
+        padding: 11px 0;
+      }
+      .pm-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+      .pm-dot:nth-child(1) {
+        background: #ff5f57;
+      }
+      .pm-dot:nth-child(2) {
+        background: #febc2e;
+      }
+      .pm-dot:nth-child(3) {
+        background: #28c840;
+      }
+
+      /* Command area */
+      .install-cmd-wrap {
+        padding: 28px 28px 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .install-prompt {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+      }
+      .install-prompt-symbol {
+        color: var(--accent3);
+        font-family: var(--mono);
+        font-size: 18px;
+        font-weight: 500;
+        flex-shrink: 0;
+        opacity: 0.8;
+      }
+      .install-cmd-text {
+        font-family: var(--mono);
+        font-size: 19px;
+        font-weight: 400;
+        color: var(--text1);
+        letter-spacing: -0.2px;
+        flex: 1;
+      }
+      .install-cmd-text .pkg-mgr {
+        color: var(--accent2);
+      }
+      .install-cmd-text .cmd-action {
+        color: var(--accent);
+      }
+      .install-cmd-text .pkg-name {
+        color: #f8f8f2;
+      }
+
+      .install-cursor {
+        display: inline-block;
+        width: 2px;
+        height: 20px;
+        background: var(--accent);
+        vertical-align: middle;
+        margin-left: 2px;
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .install-copy-btn {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        background: rgba(124, 106, 247, 0.12);
+        color: var(--accent);
+        border: 1px solid rgba(124, 106, 247, 0.3);
+        padding: 10px 18px;
+        border-radius: 10px;
+        font-family: var(--sans);
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        flex-shrink: 0;
+        transition: all 0.2s;
+        letter-spacing: 0.2px;
+      }
+      .install-copy-btn svg {
+        width: 14px;
+        height: 14px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        flex-shrink: 0;
+      }
+      .install-copy-btn:hover {
+        background: rgba(124, 106, 247, 0.22);
+        border-color: rgba(124, 106, 247, 0.6);
+        transform: translateY(-1px);
+      }
+      .install-copy-btn:active {
+        transform: translateY(0);
+      }
+      .install-copy-btn.copied {
+        background: rgba(78, 205, 196, 0.12);
+        color: var(--accent3);
+        border-color: rgba(78, 205, 196, 0.4);
+      }
+
+      /* Stats strip */
+      .install-stats {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        border-top: 1px solid var(--border);
+        padding: 0 28px;
+      }
+      .install-stat {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 12px 0;
+        padding-right: 28px;
+        margin-right: 28px;
+        border-right: 1px solid var(--border);
+        font-size: 12px;
+        color: var(--text3);
+      }
+      .install-stat:last-child {
+        border-right: none;
+        margin-right: 0;
+      }
+      .install-stat-val {
+        font-family: var(--mono);
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text2);
+      }
+      .install-stat-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      /* ── Code blocks ── */
+      .code-block {
+        background: var(--bg0);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+        margin: 12px 0;
+      }
+      .code-header {
+        background: var(--bg1);
+        border-bottom: 1px solid var(--border);
+        padding: 9px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .code-lang {
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--text3);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .copy-btn {
+        background: transparent;
+        color: var(--text3);
+        border: 1px solid var(--border);
+        padding: 3px 11px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-family: var(--sans);
+        cursor: pointer;
+        transition: all 0.18s;
+      }
+      .copy-btn:hover {
+        background: var(--bg3);
+        color: var(--text2);
+        border-color: var(--border-hi);
+      }
+      .copy-btn.copied {
+        color: var(--accent3);
+        border-color: var(--accent3);
+      }
+
+      code-area {
+        display: block;
+      }
+      pre {
+        margin: 0;
+        padding: 18px 20px;
+        font-family: var(--mono);
+        font-size: 13px;
+        line-height: 1.7;
+        color: var(--text1);
+        overflow-x: auto;
+        white-space: pre;
+      }
+
+      /* Syntax-ish coloring */
+      .kw {
+        color: #bd93f9;
+      }
+      .st {
+        color: #f1fa8c;
+      }
+      .cm {
+        color: #6272a4;
+        font-style: italic;
+      }
+      .tag {
+        color: #ff79c6;
+      }
+      .attr {
+        color: #8be9fd;
+      }
+      .val {
+        color: #50fa7b;
+      }
+      .fn {
+        color: #ffb86c;
+      }
+      .op {
+        color: var(--text3);
+      }
+
+      /* ── Font chips ── */
+      .chips-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 16px 0;
+      }
+      .chip {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        color: var(--text2);
+        font-family: var(--mono);
+        font-size: 12px;
+        padding: 5px 12px;
+        border-radius: 8px;
+        transition: all 0.18s;
+        cursor: default;
+      }
+      .chip:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: rgba(124, 106, 247, 0.08);
+      }
+
+      /* ── Tables ── */
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+      }
+      .data-table thead tr {
+        background: var(--bg2);
+      }
+      .data-table th {
+        padding: 11px 16px;
+        text-align: left;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--text3);
+        border-bottom: 1px solid var(--border);
+      }
+      .data-table td {
+        padding: 11px 16px;
+        font-size: 13.5px;
+        color: var(--text2);
+        border-bottom: 1px solid var(--border);
+      }
+      .data-table tbody tr {
+        transition: background 0.15s;
+      }
+      .data-table tbody tr:hover {
+        background: rgba(255, 255, 255, 0.025);
+      }
+      .data-table td code {
+        font-family: var(--mono);
+        font-size: 12px;
+        background: rgba(124, 106, 247, 0.12);
+        color: #a78bfa;
+        padding: 2px 8px;
+        border-radius: 5px;
+      }
+
+      /* ── Directory tree ── */
+      .dir-tree {
+        font-family: var(--mono);
+        font-size: 12.5px;
+        color: var(--text2);
+        line-height: 1.9;
+      }
+      .dir-tree .folder {
+        color: var(--accent);
+      }
+      .dir-tree .comment {
+        color: var(--text3);
+      }
+
+      /* ── Props section ── */
+      .section-divider {
+        border: none;
+        border-top: 1px solid var(--border);
+        margin: 36px 0;
+      }
+
+      /* ── Footer ── */
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 40px;
+        position: relative;
+        z-index: 1;
+      }
+      .footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .footer-copy {
+        color: var(--text3);
+        font-size: 13px;
+      }
+      .footer-link {
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 13px;
+        transition: opacity 0.2s;
+      }
+      .footer-link:hover {
+        opacity: 0.7;
+      }
+
+      /* ── Scrollbar ── */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg0);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--bg3);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--border-hi);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background art -->
+    <div class="bg-art">
+      <div class="grid-lines"></div>
+      <div class="bg-glyph">অ</div>
+      <div class="bg-glyph">ব</div>
+      <div class="bg-glyph">ক</div>
+      <div class="glow-orb"></div>
+      <div class="glow-orb"></div>
+    </div>
+
+    <div class="wrap">
+      <!-- Header -->
+      <header>
+        <div class="header-inner">
+          <a href="./index.html" class="logo">
+            <div class="logo-icon">অ</div>
+            <span class="logo-text">BanglaUI Fonts</span>
+          </a>
+          <a href="./index.html" class="back-btn">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+            Back to Home
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <div class="hero-strip">
+        <p class="hero-eyebrow">Documentation</p>
+        <h1 class="hero-title">
+          Bring <em>Bangla</em> to<br />every interface
+        </h1>
+        <p class="hero-desc">
+          16 carefully selected Bangla typefaces, packaged for modern web
+          development. Works with npm, CSS, SCSS, React, Vue, and TypeScript.
+        </p>
+      </div>
+
+      <!-- Tab Nav -->
+      <div class="tab-nav-wrap">
+        <nav class="tab-nav">
+          <button class="tab-btn active" onclick="switchTab('npm', this)">
+            NPM
+          </button>
+          <button class="tab-btn" onclick="switchTab('css', this)">CSS</button>
+          <button class="tab-btn" onclick="switchTab('scss', this)">
+            SCSS
+          </button>
+          <button class="tab-btn" onclick="switchTab('react', this)">
+            React
+          </button>
+          <button class="tab-btn" onclick="switchTab('vue', this)">Vue</button>
+          <button class="tab-btn" onclick="switchTab('typescript', this)">
+            TypeScript
+          </button>
+        </nav>
+      </div>
+
+      <!-- Content -->
+      <div class="content-wrap">
+        <!-- NPM -->
+        <div id="tab-npm" class="tab-panel active">
+          <p class="section-label">Package</p>
+          <h2 class="section-title">Install with your package manager</h2>
+          <p class="section-desc">
+            One package, all 16 Bangla fonts. Supports npm, yarn, and pnpm out
+            of the box.
+          </p>
+
+          <div class="install-hero">
+            <div class="install-inner">
+              <!-- Top bar -->
+              <div class="pm-tabs">
+                <div class="pm-tab-dots">
+                  <div class="pm-dot"></div>
+                  <div class="pm-dot"></div>
+                  <div class="pm-dot"></div>
+                </div>
+                <button class="pm-tab active" onclick="selectPm('npm', this)">
+                  npm
+                </button>
+                <button class="pm-tab" onclick="selectPm('yarn', this)">
+                  yarn
+                </button>
+                <button class="pm-tab" onclick="selectPm('pnpm', this)">
+                  pnpm
+                </button>
+                <button class="pm-tab" onclick="selectPm('bun', this)">
+                  bun
+                </button>
+              </div>
+              <!-- Command row -->
+              <div class="install-cmd-wrap">
+                <div class="install-prompt">
+                  <span class="install-prompt-symbol">~</span>
+                  <div class="install-cmd-text" id="install-cmd-text">
+                    <span class="pkg-mgr" id="pm-name">npm</span>
+                    <span> </span>
+                    <span class="cmd-action" id="pm-action">install</span>
+                    <span> </span>
+                    <span class="pkg-name">bangla-ui-fonts</span>
+                    <span class="install-cursor"></span>
+                  </div>
+                </div>
+                <button
+                  class="install-copy-btn"
+                  id="install-copy-btn"
+                  onclick="copyInstall(this)"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <rect x="9" y="9" width="13" height="13" rx="2" />
+                    <path
+                      d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"
+                    />
+                  </svg>
+                  Copy
+                </button>
+              </div>
+              <!-- Stats strip -->
+              <div class="install-stats">
+                <div class="install-stat">
+                  <span
+                    class="install-stat-dot"
+                    style="background: var(--accent)"
+                  ></span>
+                  <span>Fonts</span>
+                  <span class="install-stat-val">16</span>
+                </div>
+                <div class="install-stat">
+                  <span
+                    class="install-stat-dot"
+                    style="background: var(--accent2)"
+                  ></span>
+                  <span>Version</span>
+                  <span class="install-stat-val">1.4.0</span>
+                </div>
+                <div class="install-stat">
+                  <span
+                    class="install-stat-dot"
+                    style="background: var(--accent3)"
+                  ></span>
+                  <span>TypeScript</span>
+                  <span class="install-stat-val">included</span>
+                </div>
+                <div class="install-stat">
+                  <span
+                    class="install-stat-dot"
+                    style="background: #febc2e"
+                  ></span>
+                  <span>License</span>
+                  <span class="install-stat-val">MIT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <span class="card-title-dot"></span>All Package Managers
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">npm</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre>npm install bangla-ui-fonts</pre>
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">yarn</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre>yarn add bangla-ui-fonts</pre>
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">pnpm</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre>pnpm add bangla-ui-fonts</pre>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <span
+                  class="card-title-dot"
+                  style="background: var(--accent3)"
+                ></span
+                >Package Structure
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">directory</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="dir-tree"><span class="folder">bangla-ui-fonts/</span>
+├── package.json
+├── index.css          <span class="comment"># All fonts</span>
+├── index.d.ts         <span class="comment"># TypeScript types</span>
+├── <span class="folder">scss/</span>
+│   ├── index.scss
+│   ├── _variables.scss
+│   └── _mixins.scss
+├── <span class="folder">react/</span>
+│   ├── index.tsx
+│   ├── useBanglaFonts.ts
+│   └── BanglaFontProvider.tsx
+├── <span class="folder">vue/</span>
+│   ├── index.ts
+│   ├── BanglaText.vue
+│   └── BanglaHeading.vue
+└── <span class="folder">fonts/</span>               <span class="comment"># 16 font folders</span></span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div id="tab-css" class="tab-panel">
+          <p class="section-label">Stylesheet</p>
+          <h2 class="section-title">CSS & JavaScript imports</h2>
+          <p class="section-desc">
+            Import all 16 fonts at once, or cherry-pick only what you need to
+            keep bundle sizes lean.
+          </p>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <span class="card-title-dot"></span>Import All Fonts
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">CSS</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">@import</span> <span class="st">'bangla-ui-fonts'</span>;</pre>
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">JavaScript</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">import</span> <span class="st">'bangla-ui-fonts'</span>;</pre>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <span
+                  class="card-title-dot"
+                  style="background: var(--accent2)"
+                ></span
+                >Import Specific Fonts
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">CSS</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">@import</span> <span class="st">'bangla-ui-fonts/fonts/hind-siliguri.css'</span>;
+<span class="kw">@import</span> <span class="st">'bangla-ui-fonts/fonts/anek-bangla.css'</span>;</pre>
+              </div>
+            </div>
+          </div>
+
+          <hr class="section-divider" />
+
+          <p class="section-label">Available Fonts</p>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-size: 20px;
+              font-weight: 300;
+              color: var(--text1);
+              margin-bottom: 14px;
+            "
+          >
+            16 typefaces ready to use
+          </h3>
+          <div class="chips-wrap">
+            <span class="chip">hind-siliguri</span
+            ><span class="chip">anek-bangla</span
+            ><span class="chip">tiro-bangla</span
+            ><span class="chip">bonbonia-kajla</span
+            ><span class="chip">alinur-tatsama</span
+            ><span class="chip">alinur-borno-bikash</span
+            ><span class="chip">alinur-subas</span
+            ><span class="chip">lipishree</span
+            ><span class="chip">charukola</span
+            ><span class="chip">shokuntola</span
+            ><span class="chip">bornoporichay</span
+            ><span class="chip">bokul</span><span class="chip">sutonnymj</span
+            ><span class="chip">shurjo</span
+            ><span class="chip">srabondhara</span
+            ><span class="chip">apona-lohit</span>
+          </div>
+
+          <hr class="section-divider" />
+
+          <p class="section-label">Reference</p>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-size: 20px;
+              font-weight: 300;
+              color: var(--text1);
+              margin-bottom: 14px;
+            "
+          >
+            CSS font-family values
+          </h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Font Name</th>
+                <th>CSS Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hind Siliguri</td>
+                <td><code>"Hind Siliguri"</code></td>
+              </tr>
+              <tr>
+                <td>Anek Bangla</td>
+                <td><code>"Anek Bangla"</code></td>
+              </tr>
+              <tr>
+                <td>Tiro Bangla</td>
+                <td><code>"Tiro Bangla"</code></td>
+              </tr>
+              <tr>
+                <td>Bonbonia Kajla</td>
+                <td><code>"Bonbonia Kajla"</code></td>
+              </tr>
+              <tr>
+                <td>Sutonny MJ</td>
+                <td><code>"Sutonny MJ"</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- SCSS -->
+        <div id="tab-scss" class="tab-panel">
+          <p class="section-label">Preprocessor</p>
+          <h2 class="section-title">SCSS variables & mixins</h2>
+          <p class="section-desc">
+            Tap into design tokens and utility mixins for scalable, maintainable
+            Bangla typography systems.
+          </p>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <span class="card-title-dot"></span>Variables
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">SCSS</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">@use</span> <span class="st">'bangla-ui-fonts/scss/variables'</span> <span class="kw">as</span> *;
+
+<span class="op">.my-text {</span>
+  <span class="attr">font-family</span>: <span class="val">$bangla-font-hind-siliguri</span>;
+<span class="op">}</span></pre>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <span
+                  class="card-title-dot"
+                  style="background: var(--accent3)"
+                ></span
+                >Mixins
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">SCSS</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">@use</span> <span class="st">'bangla-ui-fonts/scss'</span> <span class="kw">as</span> *;
+
+<span class="op">.text {</span>
+  <span class="kw">@include</span> <span class="fn">bangla-body</span>(<span class="st">'hind-siliguri'</span>, 16px, 400);
+<span class="op">}</span>
+
+<span class="op">.heading {</span>
+  <span class="kw">@include</span> <span class="fn">bangla-heading</span>(<span class="st">'anek-bangla'</span>, 700);
+<span class="op">}</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: 16px">
+            <div class="card-title">
+              <span
+                class="card-title-dot"
+                style="background: var(--accent2)"
+              ></span
+              >Available Variables
+            </div>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-lang">SCSS</span
+                ><button class="copy-btn" onclick="copyBlock(this)">
+                  Copy
+                </button>
+              </div>
+              <pre><span class="cm">// Font families</span>
+<span class="val">$bangla-font-hind-siliguri</span>
+<span class="val">$bangla-font-anek-bangla</span>
+<span class="val">$bangla-font-tiro-bangla</span>
+<span class="cm">// ... and 13 more</span>
+
+<span class="cm">// Font weights</span>
+<span class="val">$bangla-weight-regular</span>    <span class="cm">// 400</span>
+<span class="val">$bangla-weight-bold</span>       <span class="cm">// 700</span></pre>
+            </div>
+          </div>
+
+          <hr class="section-divider" />
+          <p class="section-label">Reference</p>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-size: 20px;
+              font-weight: 300;
+              color: var(--text1);
+              margin-bottom: 14px;
+            "
+          >
+            Mixin API
+          </h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Mixin</th>
+                <th>Parameters</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>bangla-font()</code></td>
+                <td>$font-name, $weight, $style</td>
+                <td>Apply a font to any element</td>
+              </tr>
+              <tr>
+                <td><code>bangla-body()</code></td>
+                <td>$font, $size, $weight</td>
+                <td>Body text style preset</td>
+              </tr>
+              <tr>
+                <td><code>bangla-heading()</code></td>
+                <td>$font, $weight</td>
+                <td>Heading style preset</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- React -->
+        <div id="tab-react" class="tab-panel">
+          <p class="section-label">Framework</p>
+          <h2 class="section-title">React components</h2>
+          <p class="section-desc">
+            Declarative components for Bangla text — typed, flexible, and
+            tree-shakeable.
+          </p>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <span class="card-title-dot"></span>BanglaText
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">TSX</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">import</span> { <span class="fn">BanglaText</span> } <span class="kw">from</span> <span class="st">'bangla-ui-fonts/react'</span>;
+
+<span class="kw">function</span> <span class="fn">App</span>() {
+  <span class="kw">return</span> (
+    <span class="tag">&lt;BanglaText</span>
+      <span class="attr">font</span>=<span class="st">"hind-siliguri"</span>
+      <span class="attr">size</span>=<span class="st">"18px"</span>
+      <span class="attr">weight</span>={<span class="val">400</span>}
+    <span class="tag">&gt;</span>
+      আমার সোনার বাংলা
+    <span class="tag">&lt;/BanglaText&gt;</span>
+  );
+}</pre>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <span
+                  class="card-title-dot"
+                  style="background: var(--accent2)"
+                ></span
+                >BanglaHeading
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">TSX</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">import</span> { <span class="fn">BanglaHeading</span> } <span class="kw">from</span> <span class="st">'bangla-ui-fonts/react'</span>;
+
+<span class="tag">&lt;BanglaHeading</span>
+  <span class="attr">level</span>={<span class="val">1</span>}
+  <span class="attr">font</span>=<span class="st">"anek-bangla"</span>
+  <span class="attr">weight</span>={<span class="val">700</span>}
+<span class="tag">&gt;</span>
+  বাংলা শিরোনাম
+<span class="tag">&lt;/BanglaHeading&gt;</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: 16px">
+            <div class="card-title">
+              <span
+                class="card-title-dot"
+                style="background: var(--accent3)"
+              ></span
+              >BanglaFontProvider — Wrap your app
+            </div>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-lang">TSX</span
+                ><button class="copy-btn" onclick="copyBlock(this)">
+                  Copy
+                </button>
+              </div>
+              <pre><span class="kw">import</span> { <span class="fn">BanglaFontProvider</span> } <span class="kw">from</span> <span class="st">'bangla-ui-fonts/react'</span>;
+
+<span class="tag">&lt;BanglaFontProvider</span> <span class="attr">loadAll</span>={<span class="val">true</span>}<span class="tag">&gt;</span>
+  <span class="tag">&lt;YourApp /&gt;</span>
+<span class="tag">&lt;/BanglaFontProvider&gt;</span></pre>
+            </div>
+          </div>
+
+          <hr class="section-divider" />
+          <p class="section-label">API Reference</p>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-size: 20px;
+              font-weight: 300;
+              color: var(--text1);
+              margin-bottom: 14px;
+            "
+          >
+            Component props
+          </h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Prop</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>font</code></td>
+                <td>BanglaFontName</td>
+                <td>hind-siliguri</td>
+                <td>Which typeface to apply</td>
+              </tr>
+              <tr>
+                <td><code>weight</code></td>
+                <td>number</td>
+                <td>400</td>
+                <td>Font weight (e.g. 400, 700)</td>
+              </tr>
+              <tr>
+                <td><code>size</code></td>
+                <td>string</td>
+                <td>—</td>
+                <td>Font size (e.g. "16px", "1.2rem")</td>
+              </tr>
+              <tr>
+                <td><code>level</code></td>
+                <td>1–6</td>
+                <td>1</td>
+                <td>Heading level (BanglaHeading only)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Vue -->
+        <div id="tab-vue" class="tab-panel">
+          <p class="section-label">Framework</p>
+          <h2 class="section-title">Vue 3 components</h2>
+          <p class="section-desc">
+            Register as a Vue plugin or import components individually — full
+            Composition API support.
+          </p>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <span class="card-title-dot"></span>Plugin Setup
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">TypeScript</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">import</span> { <span class="fn">createApp</span> } <span class="kw">from</span> <span class="st">'vue'</span>
+<span class="kw">import</span> App <span class="kw">from</span> <span class="st">'./App.vue'</span>
+<span class="kw">import</span> { <span class="fn">BanglaUIFonts</span> } <span class="kw">from</span> <span class="st">'bangla-ui-fonts/vue'</span>
+
+<span class="fn">createApp</span>(App)
+  .<span class="fn">use</span>(BanglaUIFonts, { <span class="attr">loadAll</span>: <span class="val">true</span> })</pre>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <span
+                  class="card-title-dot"
+                  style="background: var(--accent3)"
+                ></span
+                >BanglaText Component
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">Vue</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="tag">&lt;template&gt;</span>
+  <span class="tag">&lt;BanglaText</span>
+    <span class="attr">font</span>=<span class="st">"hind-siliguri"</span>
+    <span class="attr">:weight</span>=<span class="st">"400"</span>
+    <span class="attr">size</span>=<span class="st">"18px"</span>
+  <span class="tag">&gt;</span>
+    আমার সোনার বাংলা
+  <span class="tag">&lt;/BanglaText&gt;</span>
+<span class="tag">&lt;/template&gt;</span>
+
+<span class="tag">&lt;script setup&gt;</span>
+<span class="kw">import</span> { <span class="fn">BanglaText</span> } <span class="kw">from</span> <span class="st">'bangla-ui-fonts/vue'</span>
+<span class="tag">&lt;/script&gt;</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <hr class="section-divider" />
+          <p class="section-label">API Reference</p>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-size: 20px;
+              font-weight: 300;
+              color: var(--text1);
+              margin-bottom: 14px;
+            "
+          >
+            Component props
+          </h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Prop</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>font</code></td>
+                <td>string</td>
+                <td>hind-siliguri</td>
+                <td>Typeface name</td>
+              </tr>
+              <tr>
+                <td><code>weight</code></td>
+                <td>number</td>
+                <td>400</td>
+                <td>Font weight</td>
+              </tr>
+              <tr>
+                <td><code>size</code></td>
+                <td>string</td>
+                <td>—</td>
+                <td>Font size</td>
+              </tr>
+              <tr>
+                <td><code>level</code></td>
+                <td>1–6</td>
+                <td>1</td>
+                <td>Heading level</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- TypeScript -->
+        <div id="tab-typescript" class="tab-panel">
+          <p class="section-label">Types</p>
+          <h2 class="section-title">Full TypeScript support</h2>
+          <p class="section-desc">
+            Bundled type definitions with strict font name unions and FontInfo
+            interfaces — no DefinitelyTyped needed.
+          </p>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <span class="card-title-dot"></span>BanglaFontName Type
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">TypeScript</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">import type</span> { <span class="fn">BanglaFontName</span> } <span class="kw">from</span> <span class="st">'bangla-ui-fonts'</span>
+
+<span class="kw">const</span> myFont<span class="op">:</span> <span class="fn">BanglaFontName</span> = <span class="st">'hind-siliguri'</span>
+<span class="cm">// ✓ Type-safe — typos caught at compile time</span></pre>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <span
+                  class="card-title-dot"
+                  style="background: var(--accent2)"
+                ></span
+                >FontInfo Type
+              </div>
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-lang">TypeScript</span
+                  ><button class="copy-btn" onclick="copyBlock(this)">
+                    Copy
+                  </button>
+                </div>
+                <pre><span class="kw">import</span> { fonts, <span class="kw">type</span> <span class="fn">FontInfo</span> } <span class="kw">from</span> <span class="st">'bangla-ui-fonts'</span>
+
+fonts.<span class="fn">forEach</span>((<span class="attr">font</span><span class="op">:</span> <span class="fn">FontInfo</span>) <span class="op">=&gt;</span> {
+  console.<span class="fn">log</span>(font.name)
+})</pre>
+              </div>
+            </div>
+          </div>
+
+          <hr class="section-divider" />
+          <p class="section-label">All Font Names</p>
+          <h3
+            style="
+              font-family: var(--serif);
+              font-size: 20px;
+              font-weight: 300;
+              color: var(--text1);
+              margin-bottom: 14px;
+            "
+          >
+            Valid
+            <code
+              style="
+                font-size: 16px;
+                background: rgba(124, 106, 247, 0.12);
+                color: #a78bfa;
+                padding: 2px 10px;
+                border-radius: 6px;
+              "
+              >BanglaFontName</code
+            >
+            values
+          </h3>
+          <div class="chips-wrap">
+            <span class="chip">hind-siliguri</span
+            ><span class="chip">anek-bangla</span
+            ><span class="chip">tiro-bangla</span
+            ><span class="chip">bonbonia-kajla</span
+            ><span class="chip">alinur-tatsama</span
+            ><span class="chip">alinur-borno-bikash</span
+            ><span class="chip">alinur-subas</span
+            ><span class="chip">lipishree</span
+            ><span class="chip">charukola</span
+            ><span class="chip">shokuntola</span
+            ><span class="chip">bornoporichay</span
+            ><span class="chip">bokul</span><span class="chip">sutonnymj</span
+            ><span class="chip">shurjo</span
+            ><span class="chip">srabondhara</span
+            ><span class="chip">apona-lohit</span>
+          </div>
+        </div>
+      </div>
+      <!-- /content-wrap -->
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-inner">
+          <span class="footer-copy"
+            >© 2026 BanglaUI Font. All rights reserved.</span
+          >
+          <a href="./index.html" class="footer-link">← Back to Home</a>
+        </div>
+      </footer>
+    </div>
+    <!-- /wrap -->
+
+    <script>
+      function switchTab(id, btn) {
+        document
+          .querySelectorAll(".tab-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-panel")
+          .forEach((p) => p.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById("tab-" + id).classList.add("active");
+      }
+
+      const pmMap = {
+        npm: { name: "npm", action: "install" },
+        yarn: { name: "yarn", action: "add" },
+        pnpm: { name: "pnpm", action: "add" },
+        bun: { name: "bun", action: "add" },
+      };
+
+      function selectPm(pm, btn) {
+        document
+          .querySelectorAll(".pm-tab")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const { name, action } = pmMap[pm];
+        document.getElementById("pm-name").textContent = name;
+        document.getElementById("pm-action").textContent = action;
+      }
+
+      function copyInstall(btn) {
+        const name = document.getElementById("pm-name").textContent;
+        const action = document.getElementById("pm-action").textContent;
+        const cmd = `${name} ${action} bangla-ui-fonts`;
+        navigator.clipboard.writeText(cmd).then(() => {
+          const orig = btn.innerHTML;
+          btn.innerHTML = `<svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.5"><polyline points="20 6 9 17 4 12"/></svg> Copied!`;
+          btn.classList.add("copied");
+          setTimeout(() => {
+            btn.innerHTML = orig;
+            btn.classList.remove("copied");
+          }, 2000);
+        });
+      }
+
+      function copyBlock(btn) {
+        const pre = btn.closest(".code-block").querySelector("pre");
+        navigator.clipboard.writeText(pre.innerText).then(() => {
+          btn.textContent = "Copied!";
+          btn.classList.add("copied");
+          setTimeout(() => {
+            btn.textContent = "Copy";
+            btn.classList.remove("copied");
+          }, 2000);
+        });
+      }
+
+      function copyText(text, btn) {
+        navigator.clipboard.writeText(text).then(() => {
+          const orig = btn.textContent;
+          btn.textContent = "Copied!";
+          setTimeout(() => (btn.textContent = orig), 2000);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+// Bangla UI Fonts - Variables
+// =============================
+
+// Font Family Variables
+$bangla-font-hind-siliguri: "Hind Siliguri", sans-serif;
+$bangla-font-anek-bangla: "Anek Bangla", sans-serif;
+$bangla-font-tiro-bangla: "Tiro Bangla", sans-serif;
+$bangla-font-bonbonia-kajla: "Bonbonia Kajla", sans-serif;
+$bangla-font-alinur-tatsama: "Alinur Tatsama", sans-serif;
+$bangla-font-alinur-borno-bikash: "Alinur Borno Bikash", sans-serif;
+$bangla-font-alinur-subas: "Alinur Subas", sans-serif;
+$bangla-font-lipishree: "Lipishree", sans-serif;
+$bangla-font-charukola: "Charukola", sans-serif;
+$bangla-font-shokuntola: "Shokuntola", sans-serif;
+$bangla-font-bornoporichay: "Bornoporichay", sans-serif;
+$bangla-font-bokul: "Bokul", sans-serif;
+$bangla-font-sutonnymj: "Sutonny MJ", sans-serif;
+$bangla-font-shurjo: "Shurjo", sans-serif;
+$bangla-font-srabondhara: "Srabondhara", sans-serif;
+$bangla-font-apona-lohit: "Apona Lohit", sans-serif;
+
+// Font Map for iteration
+$bangla-fonts: (
+  "hind-siliguri": $bangla-font-hind-siliguri,
+  "anek-bangla": $bangla-font-anek-bangla,
+  "tiro-bangla": $bangla-font-tiro-bangla,
+  "bonbonia-kajla": $bangla-font-bonbonia-kajla,
+  "alinur-tatsama": $bangla-font-alinur-tatsama,
+  "alinur-borno-bikash": $bangla-font-alinur-borno-bikash,
+  "alinur-subas": $bangla-font-alinur-subas,
+  "lipishree": $bangla-font-lipishree,
+  "charukola": $bangla-font-charukola,
+  "shokuntola": $bangla-font-shokuntola,
+  "bornoporichay": $bangla-font-bornoporichay,
+  "bokul": $bangla-font-bokul,
+  "sutonnymj": $bangla-font-sutonnymj,
+  "shurjo": $bangla-font-shurjo,
+  "srabondhara": $bangla-font-srabondhara,
+  "apona-lohit": $bangla-font-apona-lohit
+);
+
+// Default Font
+$bangla-default-font: $bangla-font-hind-siliguri;
+
+// Font Weights
+$bangla-weight-thin: 100;
+$bangla-weight-extralight: 200;
+$bangla-weight-light: 300;
+$bangla-weight-regular: 400;
+$bangla-weight-medium: 500;
+$bangla-weight-semibold: 600;
+$bangla-weight-bold: 700;
+$bangla-weight-extrabold: 800;
+$bangla-weight-black: 900;

@@ -24,6 +24,11 @@
 @import "./FontCSS/srabondhara.css";
 @import "./FontCSS/bonbonia-kajla.css";
 
+/* Docs Link in Info Box */
+.docs-link {
+  text-decoration: none;
+}
+
 body {
   background-color: #212529 !important;
 }

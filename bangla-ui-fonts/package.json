@@ -1,0 +1,73 @@
+{
+  "name": "bangla-ui-fonts",
+  "version": "1.0.0",
+  "description": "Collection of beautiful Bengali fonts for web projects - TypeScript, React, Vue, SCSS supported",
+  "main": "index.css",
+  "module": "index.css",
+  "style": "index.css",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.css",
+      "require": "./index.css",
+      "sass": "./scss/index.scss",
+      "default": "./index.css"
+    },
+    "./scss": {
+      "sass": "./scss/index.scss"
+    },
+    "./scss/variables": {
+      "sass": "./scss/_variables.scss"
+    },
+    "./scss/mixins": {
+      "sass": "./scss/_mixins.scss"
+    },
+    "./react": {
+      "import": "./react/index.tsx",
+      "types": "./react/index.tsx"
+    },
+    "./vue": {
+      "import": "./vue/index.ts",
+      "types": "./vue/index.ts"
+    },
+    "./fonts/*": {
+      "import": "./fonts/*.css"
+    }
+  },
+  "files": [
+    "fonts/",
+    "scss/",
+    "react/",
+    "vue/",
+    "index.css",
+    "index.d.ts",
+    "*.scss"
+  ],
+  "keywords": [
+    "bangla",
+    "bengali",
+    "font",
+    "typography",
+    "bd-font",
+    "unicode",
+    "react",
+    "vue",
+    "scss",
+    "typescript"
+  ],
+  "author": "Shakil Ansary",
+  "license": "OFL-1.1",
+  "homepage": "https://github.com/ShakilAnsary9/BanglaUI-Font",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShakilAnsary9/BanglaUI-Font.git"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

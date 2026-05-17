@@ -1,0 +1,14 @@
+// Bangla UI Fonts - Main SCSS
+// ============================
+
+// Variables
+@import 'variables';
+
+// Mixins
+@import 'mixins';
+
+// Import all font CSS
+@import '../index.css';
+
+// Generate utility classes
+@include bangla-generate-classes;
