@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Hind Siliguri",
+    "nativeName": "হিন্দ শিলিগুরি",
+    "fontFamily": "Hind Siliguri",
+    "cssFile": "hind-siliguri.css",
+    "downloadZip": "./fonts/Hind-Siliguri/Hind_Siliguri.zip",
+    "className": "hind-siliguri"
+  },
+  {
+    "name": "Anek Bangla",
+    "nativeName": "আনেক বাংলা",
+    "fontFamily": "Anek Bangla",
+    "cssFile": "anek-bangla.css",
+    "downloadZip": "./fonts/Anek-Bangla/Anek_Bangla.zip",
+    "className": "anek-bangla"
+  },
+  {
+    "name": "Tiro Bangla",
+    "nativeName": "তিরো বাংলা",
+    "fontFamily": "Tiro Bangla",
+    "cssFile": "tiro-banga.css",
+    "downloadZip": "./fonts/Tiro-Bangla/Tiro_Bangla.zip",
+    "className": "tiro-bangla"
+  },
+  {
+    "name": "Bonbonia Kajla",
+    "nativeName": "বনবনিয়া কাজলা",
+    "fontFamily": "Bonbonia Kajla",
+    "cssFile": "bonbonia-kajla.css",
+    "downloadZip": "./fonts/Bonbonia-Kajla/Bonbonia-Kajla.zip",
+    "className": "bonbonia-kajla"
+  },
+  {
+    "name": "Alinur Tatsama",
+    "nativeName": "আলিনুর ততসম",
+    "fontFamily": "Alinur Tatsama",
+    "cssFile": "alinur-tatsama.css",
+    "downloadZip": "./fonts/Alinur-Tatsama/Alinur_Tatsama.zip",
+    "className": "alinur-tatsama"
+  },
+  {
+    "name": "Alinur Borno Bikash",
+    "nativeName": "আলিনুর বর্নবিকাশ",
+    "fontFamily": "Alinur Borno Bikash",
+    "cssFile": "alinur-borno-bikash.css",
+    "downloadZip": "./fonts/Alinur-Borno-Bikash/Alinur_Borno_Bikash.zip",
+    "className": "alinur-borno-bikash"
+  },
+  {
+    "name": "Alinur Subas",
+    "nativeName": "আলিনুর সুবাস",
+    "fontFamily": "Alinur Subas",
+    "cssFile": "alinur-subas.css",
+    "downloadZip": "./fonts/Alinur-Subas/Alinur_Subas.zip",
+    "className": "alinur-subas"
+  },
+  {
+    "name": "Lipishree",
+    "nativeName": "লিপিশ্রী",
+    "fontFamily": "Lipishree",
+    "cssFile": "lipishree.css",
+    "downloadZip": "./fonts/Lipishree/Lipishree.zip",
+    "className": "lipishree"
+  },
+  {
+    "name": "Charukola",
+    "nativeName": "চারুকলা",
+    "fontFamily": "Charukola",
+    "cssFile": "charukola.css",
+    "downloadZip": "./fonts/Charukola/Charukola.zip",
+    "className": "charukola"
+  },
+  {
+    "name": "Shokuntola",
+    "nativeName": "শকুন্তলা",
+    "fontFamily": "Shokuntola",
+    "cssFile": "shokuntola.css",
+    "downloadZip": "./fonts/Shokuntola/Shokuntola.zip",
+    "className": "shokuntola"
+  },
+  {
+    "name": "Bornoporichay",
+    "nativeName": "বর্নপরিচয়",
+    "fontFamily": "Bornoporichay",
+    "cssFile": "bornoporichay.css",
+    "downloadZip": "./fonts/Bornoporichay/Bornoporichay.zip",
+    "className": "bornoporichay"
+  },
+  {
+    "name": "Bokul",
+    "nativeName": "বকুল",
+    "fontFamily": "Bokul",
+    "cssFile": "bokul.css",
+    "downloadZip": "./fonts/Bokul/Bokul.zip",
+    "className": "bokul"
+  },
+  {
+    "name": "SutonnyMJ",
+    "nativeName": "সুতন্মজ",
+    "fontFamily": "Sutonny MJ",
+    "cssFile": "sutonnymj.css",
+    "downloadZip": "./fonts/SutonnyMJ/SutonnyMJ.zip",
+    "className": "sutonnymj"
+  },
+  {
+    "name": "Shurjo",
+    "nativeName": "সূর্য",
+    "fontFamily": "Shurjo",
+    "cssFile": "shurjo.css",
+    "downloadZip": "./fonts/Shurjo/Shurjo.zip",
+    "className": "shurjo"
+  },
+  {
+    "name": "Srabondhara",
+    "nativeName": "শ্রাবণধারা",
+    "fontFamily": "Srabondhara",
+    "cssFile": "srabondhara.css",
+    "downloadZip": "./fonts/Srabondhara/Srabondhara.zip",
+    "className": "srabondhara"
+  },
+  {
+    "name": "Apona Lohit",
+    "nativeName": "আপনা লোহিত",
+    "fontFamily": "Apona Lohit",
+    "cssFile": "apona-lohit.css",
+    "downloadZip": "./fonts/Apona-Lohit/Apona_Lohit.zip",
+    "className": "apona-lohit"
+  }
+]
